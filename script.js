@@ -1,12 +1,3 @@
-class Person {
-    constructor(name){
-        this.name=name
-    }
-    
-    greeting(){
-        console.log(`hello  from ${this.name}`) 
-    }
-}
 const name = document.getElementById("name");
 const height = document.getElementById("height");
 const sprites = document.getElementById("sprites");

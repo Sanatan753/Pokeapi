@@ -11,8 +11,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
     backdrop-filter: blur(5px);
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 
 .container {
@@ -55,7 +57,7 @@ div {
 img#sprites,#sprites_shiny {
     margin-top: 10px;
     border-radius: 5px;
-    height:200px;
+    max-height:200px;
 }
 
 button.getRandomCharacter {

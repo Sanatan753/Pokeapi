@@ -1,5 +1,6 @@
 const name = document.getElementById("name");
 const height = document.getElementById("height");
+const Weight = document.getElementById("weight");
 const sprites = document.getElementById("sprites");
 const sprites_shiny = document.getElementById("sprites_shiny");
 const abilities = document.getElementById("abilities");
@@ -19,6 +20,7 @@ button.addEventListener('click',(e) =>{
             console.log(CharacterData);
             name.innerHTML = CharacterData['name'];
             height.innerHTML = (CharacterData['height'] * 10) + 'cm';
+            Weight.innerHTML = (CharacterData['height'] / 10).toFixed(2) + ' Kg';
             abilities.innerHTML = CharacterData['abilities'][0]['ability']['name'];
             sprites.src=CharacterData['sprites']['front_default'];
             sprites_shiny.src=CharacterData['sprites']['front_shiny'];
